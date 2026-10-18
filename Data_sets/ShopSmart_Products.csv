@@ -1,0 +1,501 @@
+Product_ID,Product_Name,Category,Sub_Category,Brand,Cost_Price,Selling_Price
+PROD0001,Beauty Item 1,Beauty,General,Zuniga PLC,44803,75526.21
+PROD0002,Beauty Item 2,Beauty,General,Olson-Rosales,11728,14100.26
+PROD0003,Electronics Item 3,Electronics,General,"Mosley, Watson and Middleton",39383,52368.82
+PROD0004,Home Item 4,Home,General,Wood Ltd,8908,13574.07
+PROD0005,Home Item 5,Home,General,Padilla-Blake,47918,84078.14
+PROD0006,Beauty Item 6,Beauty,General,Cohen-Montoya,44344,74156.5
+PROD0007,Beauty Item 7,Beauty,General,Cruz-Stanley,38683,65787.93
+PROD0008,Fashion Item 8,Fashion,General,Scott Group,7037,8968.12
+PROD0009,Electronics Item 9,Electronics,General,Moore Ltd,1022,1837.96
+PROD0010,Beauty Item 10,Beauty,General,Wagner-Williams,29699,35352.56
+PROD0011,Groceries Item 11,Groceries,General,Barnes-Sanchez,8046,13696.66
+PROD0012,Electronics Item 12,Electronics,General,Williams-Pollard,31887,42370.69
+PROD0013,Beauty Item 13,Beauty,General,Adams-Middleton,23289,28759.62
+PROD0014,Home Item 14,Home,General,Miller-Stone,24783,33102.03
+PROD0015,Beauty Item 15,Beauty,General,Harding PLC,9144,15557.61
+PROD0016,Groceries Item 16,Groceries,General,"Miller, Salazar and Wiggins",2943,3740.86
+PROD0017,Electronics Item 17,Electronics,General,Dyer LLC,20276,26251.26
+PROD0018,Home Item 18,Home,General,George-Burgess,20448,27953.46
+PROD0019,Electronics Item 19,Electronics,General,"Flores, Russell and Schwartz",10224,16424.59
+PROD0020,Groceries Item 20,Groceries,General,"Hernandez, Hill and Hammond",37630,42831.42
+PROD0021,Electronics Item 21,Electronics,General,Campbell Inc,9769,16881.49
+PROD0022,Fashion Item 22,Fashion,General,Maddox-Cox,7488,8951.55
+PROD0023,Electronics Item 23,Electronics,General,"Simpson, Khan and Freeman",13871,22383.46
+PROD0024,Home Item 24,Home,General,Vance PLC,22344,38005.58
+PROD0025,Fashion Item 25,Fashion,General,"Marsh, Brown and Lynch",35153,56065
+PROD0026,Home Item 26,Home,General,Reynolds and Sons,12972,17272.7
+PROD0027,Fashion Item 27,Fashion,General,"Hernandez, Daniels and Adams",41656,65578.15
+PROD0028,Home Item 28,Home,General,"Robinson, Baker and Knight",651,969.19
+PROD0029,Home Item 29,Home,General,"Orozco, Garner and Mccormick",5669,9897.44
+PROD0030,Beauty Item 30,Beauty,General,Lee-Spencer,14813,26086.69
+PROD0031,Fashion Item 31,Fashion,General,Anderson Ltd,46756,63230.35
+PROD0032,Fashion Item 32,Fashion,General,"Vazquez, Wells and Bautista",12896,16527.03
+PROD0033,Fashion Item 33,Fashion,General,"Velasquez, Anderson and Morgan",26488,36328.83
+PROD0034,Electronics Item 34,Electronics,General,"Smith, Vega and Wilson",5249,6592.62
+PROD0035,Beauty Item 35,Beauty,General,Carpenter-Hampton,36592,49753.8
+PROD0036,Groceries Item 36,Groceries,General,Weber Ltd,19939,34358.37
+PROD0037,Groceries Item 37,Groceries,General,Zavala Ltd,27199,32918.95
+PROD0038,Groceries Item 38,Groceries,General,Jones Group,2694,4581.37
+PROD0039,Groceries Item 39,Groceries,General,Thomas Ltd,20817,29565.63
+PROD0040,Groceries Item 40,Groceries,General,"Johnson, Moody and Carter",17875,24749.8
+PROD0041,Electronics Item 41,Electronics,General,Miller-Dixon,1726,2262.58
+PROD0042,Home Item 42,Home,General,Freeman Inc,47306,71224.48
+PROD0043,Beauty Item 43,Beauty,General,Montes LLC,49091,77819.18
+PROD0044,Home Item 44,Home,General,Rivers-Nichols,35907,60389.71
+PROD0045,Electronics Item 45,Electronics,General,"Franklin, Walker and Smith",36686,60679.7
+PROD0046,Fashion Item 46,Fashion,General,Carpenter-Kim,47080,75115.79
+PROD0047,Groceries Item 47,Groceries,General,Dixon-Smith,37795,64336.49
+PROD0048,Home Item 48,Home,General,Decker Inc,49865,75186.28
+PROD0049,Electronics Item 49,Electronics,General,"Ford, Robinson and Henry",10526,18107.72
+PROD0050,Electronics Item 50,Electronics,General,"Moore, Rivers and Murray",42877,67053.84
+PROD0051,Home Item 51,Home,General,"Peterson, Berry and Cook",29214,50320.76
+PROD0052,Electronics Item 52,Electronics,General,"Martinez, Rice and Perry",31027,39852.54
+PROD0053,Electronics Item 53,Electronics,General,"Medina, Drake and Torres",20298,25280.91
+PROD0054,Fashion Item 54,Fashion,General,Nichols LLC,4330,5233.31
+PROD0055,Beauty Item 55,Beauty,General,"Webster, Luna and Taylor",24526,43241.16
+PROD0056,Groceries Item 56,Groceries,General,"Goodwin, Hanson and Wilson",11115,18568.13
+PROD0057,Beauty Item 57,Beauty,General,Nielsen-Clark,18871,26334.24
+PROD0058,Fashion Item 58,Fashion,General,Hill-Parker,12373,17494.42
+PROD0059,Fashion Item 59,Fashion,General,Stone PLC,48330,82668.39
+PROD0060,Groceries Item 60,Groceries,General,"Hughes, Marks and Lopez",13539,16798.23
+PROD0061,Beauty Item 61,Beauty,General,Vargas-Davis,10547,16205.74
+PROD0062,Groceries Item 62,Groceries,General,Choi Ltd,1110,1326.9
+PROD0063,Groceries Item 63,Groceries,General,Jones-Brown,22139,30571.54
+PROD0064,Electronics Item 64,Electronics,General,Henderson-Potter,14624,18178.92
+PROD0065,Electronics Item 65,Electronics,General,"Tyler, Salazar and Mitchell",15555,17349.68
+PROD0066,Groceries Item 66,Groceries,General,Foley-Jacobs,17122,23727.74
+PROD0067,Home Item 67,Home,General,Johnson-Johnson,4938,7969.16
+PROD0068,Electronics Item 68,Electronics,General,Deleon and Sons,44430,76892.01
+PROD0069,Home Item 69,Home,General,Burke-Turner,24433,42830.32
+PROD0070,Electronics Item 70,Electronics,General,Delgado LLC,29174,49570.48
+PROD0071,Groceries Item 71,Groceries,General,Johnson PLC,31851,48629.18
+PROD0072,Fashion Item 72,Fashion,General,Hopkins Inc,49711,83001.54
+PROD0073,Groceries Item 73,Groceries,General,Coleman-Cantrell,49546,56465.89
+PROD0074,Fashion Item 74,Fashion,General,Gutierrez-Mccullough,42558,57842.13
+PROD0075,Electronics Item 75,Electronics,General,Mendez Inc,5627,9898.42
+PROD0076,Groceries Item 76,Groceries,General,Kim-Carlson,15627,25226.69
+PROD0077,Beauty Item 77,Beauty,General,Jennings-Evans,17428,29126.46
+PROD0078,Groceries Item 78,Groceries,General,Lin-Wheeler,15900,17813.25
+PROD0079,Fashion Item 79,Fashion,General,Perez Inc,47472,82721.38
+PROD0080,Groceries Item 80,Groceries,General,Thompson and Sons,3558,4230.25
+PROD0081,Fashion Item 81,Fashion,General,"Stevens, Blackburn and Wells",30545,35055.61
+PROD0082,Beauty Item 82,Beauty,General,"Harris, Glass and Welch",49088,81388.61
+PROD0083,Electronics Item 83,Electronics,General,Cummings-Warren,6455,9152.89
+PROD0084,Groceries Item 84,Groceries,General,Cooper-Harris,11209,17523.5
+PROD0085,Groceries Item 85,Groceries,General,"Rios, Burns and Floyd",19680,22365.99
+PROD0086,Fashion Item 86,Fashion,General,"Vargas, Erickson and Brown",4333,6098.88
+PROD0087,Home Item 87,Home,General,Fischer-Smith,17470,27294.91
+PROD0088,Beauty Item 88,Beauty,General,"Williams, Jones and Harris",30814,49633.75
+PROD0089,Electronics Item 89,Electronics,General,"Mills, Nelson and Burke",31713,49140.41
+PROD0090,Home Item 90,Home,General,"Whitney, Johnson and Smith",21544,36137.65
+PROD0091,Home Item 91,Home,General,Boyd-Smith,7438,11421.86
+PROD0092,Beauty Item 92,Beauty,General,Townsend PLC,12485,21823.3
+PROD0093,Electronics Item 93,Electronics,General,Baxter Group,25817,34900.26
+PROD0094,Beauty Item 94,Beauty,General,Caldwell-Wright,15402,22729.9
+PROD0095,Home Item 95,Home,General,Johnston-Andersen,10598,17508.25
+PROD0096,Home Item 96,Home,General,Greene-Jarvis,41717,50220.45
+PROD0097,Beauty Item 97,Beauty,General,Rangel Group,4700,5761.8
+PROD0098,Fashion Item 98,Fashion,General,Moore LLC,39742,44831.85
+PROD0099,Beauty Item 99,Beauty,General,"Moore, Simmons and King",45594,61108.25
+PROD0100,Home Item 100,Home,General,Garcia PLC,35481,46026.78
+PROD0101,Fashion Item 101,Fashion,General,Thomas-Bryant,33735,54222.1
+PROD0102,Groceries Item 102,Groceries,General,Myers Inc,16713,24063.84
+PROD0103,Groceries Item 103,Groceries,General,Mckinney PLC,30080,45161.58
+PROD0104,Electronics Item 104,Electronics,General,"Lamb, Lopez and Bryant",12709,14867.13
+PROD0105,Electronics Item 105,Electronics,General,Jones Ltd,6132,10948.86
+PROD0106,Electronics Item 106,Electronics,General,"Williams, Williams and Greene",35294,50135.93
+PROD0107,Beauty Item 107,Beauty,General,"Carter, Hernandez and Schmidt",3250,4111.23
+PROD0108,Fashion Item 108,Fashion,General,Myers and Sons,45612,67823.18
+PROD0109,Beauty Item 109,Beauty,General,Roberts-Moreno,3776,5923.51
+PROD0110,Electronics Item 110,Electronics,General,Christian-Steele,30280,51431.8
+PROD0111,Home Item 111,Home,General,"Lucas, Fisher and Duncan",19593,31064.9
+PROD0112,Groceries Item 112,Groceries,General,"Smith, Nelson and Ortiz",39707,47876.14
+PROD0113,Electronics Item 113,Electronics,General,"Nash, Richmond and Rhodes",39019,69459.17
+PROD0114,Beauty Item 114,Beauty,General,Figueroa Ltd,17003,26968.65
+PROD0115,Groceries Item 115,Groceries,General,Diaz-Martin,39702,52519.3
+PROD0116,Electronics Item 116,Electronics,General,Sims PLC,32874,38509.15
+PROD0117,Groceries Item 117,Groceries,General,Robertson LLC,9812,17011.27
+PROD0118,Home Item 118,Home,General,Cooke Inc,49549,63332
+PROD0119,Groceries Item 119,Groceries,General,"Becker, Williams and Barnes",37040,52525.77
+PROD0120,Groceries Item 120,Groceries,General,Ward LLC,1906,2577.87
+PROD0121,Fashion Item 121,Fashion,General,Vasquez-Russell,10307,12379.11
+PROD0122,Home Item 122,Home,General,"Oneill, Bender and Mills",12044,16425.84
+PROD0123,Fashion Item 123,Fashion,General,"Rodriguez, Cuevas and Johnson",45398,75707.35
+PROD0124,Beauty Item 124,Beauty,General,Briggs-Knapp,42839,58593.05
+PROD0125,Groceries Item 125,Groceries,General,Mcknight Group,13299,21518.13
+PROD0126,Electronics Item 126,Electronics,General,"Smith, Gonzalez and Cooper",45874,67788.24
+PROD0127,Groceries Item 127,Groceries,General,Sandoval-Hamilton,13761,24540.18
+PROD0128,Fashion Item 128,Fashion,General,"Robinson, Browning and Lee",20294,28613.99
+PROD0129,Electronics Item 129,Electronics,General,"Callahan, Mejia and Fisher",20470,29713.07
+PROD0130,Beauty Item 130,Beauty,General,Smith-Kline,33208,48350.92
+PROD0131,Beauty Item 131,Beauty,General,Davis-Simpson,22165,24563.71
+PROD0132,Home Item 132,Home,General,Williams-Rodriguez,1863,3098.37
+PROD0133,Electronics Item 133,Electronics,General,Snyder-Nash,25022,38276.02
+PROD0134,Home Item 134,Home,General,"Roberts, Porter and Roberts",33758,53305.51
+PROD0135,Electronics Item 135,Electronics,General,Miller-Garcia,40613,66453.51
+PROD0136,Fashion Item 136,Fashion,General,Steele Group,12916,21332.27
+PROD0137,Home Item 137,Home,General,"Miller, Shannon and Johnson",33060,42322.26
+PROD0138,Groceries Item 138,Groceries,General,Mcgrath Group,26534,37120.99
+PROD0139,Groceries Item 139,Groceries,General,Berry-Wilson,10983,19366.76
+PROD0140,Beauty Item 140,Beauty,General,Mckenzie Group,49067,64845.61
+PROD0141,Groceries Item 141,Groceries,General,"Myers, West and Thomas",18064,22209.52
+PROD0142,Home Item 142,Home,General,Butler-Taylor,31574,41779.81
+PROD0143,Groceries Item 143,Groceries,General,Jackson-Schwartz,10986,19098.44
+PROD0144,Beauty Item 144,Beauty,General,"Greer, Ortiz and Davenport",10567,11753.42
+PROD0145,Electronics Item 145,Electronics,General,Greene and Sons,26672,35860.58
+PROD0146,Electronics Item 146,Electronics,General,Hughes-Lowery,9790,16316.65
+PROD0147,Groceries Item 147,Groceries,General,Whitaker-Schultz,2320,3614.29
+PROD0148,Beauty Item 148,Beauty,General,Brown-Cherry,48021,83998.93
+PROD0149,Groceries Item 149,Groceries,General,"Gilbert, Brown and Bennett",39331,51133.69
+PROD0150,Electronics Item 150,Electronics,General,"Reed, Carter and Chung",21640,37801.67
+PROD0151,Home Item 151,Home,General,"Perry, Spencer and Jackson",14810,16726.84
+PROD0152,Beauty Item 152,Beauty,General,Lin-Joyce,21323,28169.03
+PROD0153,Beauty Item 153,Beauty,General,White PLC,26860,33919.18
+PROD0154,Groceries Item 154,Groceries,General,Mendoza Inc,30861,48385.81
+PROD0155,Groceries Item 155,Groceries,General,Carr Inc,42820,59349.54
+PROD0156,Beauty Item 156,Beauty,General,Young-Moran,47864,62589.9
+PROD0157,Groceries Item 157,Groceries,General,Deleon-Gillespie,3301,4628.08
+PROD0158,Electronics Item 158,Electronics,General,Martinez Ltd,22469,35147.62
+PROD0159,Beauty Item 159,Beauty,General,Day Ltd,34209,38278.07
+PROD0160,Beauty Item 160,Beauty,General,"Lewis, Perry and Bailey",22758,26580.6
+PROD0161,Groceries Item 161,Groceries,General,"Diaz, Sims and Watson",47938,56321.32
+PROD0162,Beauty Item 162,Beauty,General,Moore-Ellis,3150,3561.16
+PROD0163,Beauty Item 163,Beauty,General,"Henderson, Cantu and Martinez",35524,60254.65
+PROD0164,Groceries Item 164,Groceries,General,"Warner, Booker and Pineda",46661,79271.32
+PROD0165,Electronics Item 165,Electronics,General,"Anderson, Sandoval and Bryan",42598,49353.85
+PROD0166,Groceries Item 166,Groceries,General,"Clarke, Henry and Sandoval",6684,11796.12
+PROD0167,Groceries Item 167,Groceries,General,Olson-Adams,5498,7479.91
+PROD0168,Fashion Item 168,Fashion,General,Navarro and Sons,34012,53192.13
+PROD0169,Electronics Item 169,Electronics,General,Kaiser-Burch,47111,64105.95
+PROD0170,Groceries Item 170,Groceries,General,Gentry-Ward,29037,42986.6
+PROD0171,Beauty Item 171,Beauty,General,Garcia LLC,33235,59623.71
+PROD0172,Fashion Item 172,Fashion,General,"Gordon, Walker and Ingram",1052,1233.77
+PROD0173,Beauty Item 173,Beauty,General,"Hunter, Alexander and White",7691,11317.97
+PROD0174,Fashion Item 174,Fashion,General,Smith LLC,36955,54547.93
+PROD0175,Home Item 175,Home,General,Lee and Sons,20770,37223.48
+PROD0176,Groceries Item 176,Groceries,General,"Martin, Ray and Hooper",44652,49147.21
+PROD0177,Home Item 177,Home,General,Lang PLC,12143,18202.5
+PROD0178,Beauty Item 178,Beauty,General,Adams Group,33125,46692.04
+PROD0179,Beauty Item 179,Beauty,General,"Benitez, Fleming and Baker",31986,40660.17
+PROD0180,Fashion Item 180,Fashion,General,Hawkins Inc,34629,46025.56
+PROD0181,Home Item 181,Home,General,Green-Riggs,42299,58423.74
+PROD0182,Home Item 182,Home,General,"Reed, Jimenez and Powell",49582,65326.99
+PROD0183,Electronics Item 183,Electronics,General,"Wilson, Harris and Sutton",39545,55550.49
+PROD0184,Groceries Item 184,Groceries,General,"Diaz, George and Fox",14767,19305.43
+PROD0185,Groceries Item 185,Groceries,General,Meyer-Williams,7826,11953.12
+PROD0186,Home Item 186,Home,General,"Pierce, Sharp and Valdez",9991,12242.29
+PROD0187,Groceries Item 187,Groceries,General,"Brown, Todd and Gilmore",12494,13893.02
+PROD0188,Electronics Item 188,Electronics,General,Sandoval-Bryant,3480,4520.61
+PROD0189,Beauty Item 189,Beauty,General,French and Sons,17076,25141.48
+PROD0190,Electronics Item 190,Electronics,General,"Glass, Ramirez and Burch",18942,30551.88
+PROD0191,Beauty Item 191,Beauty,General,Benson-Tucker,37747,61933.01
+PROD0192,Electronics Item 192,Electronics,General,Smith Group,6401,9151.78
+PROD0193,Beauty Item 193,Beauty,General,"Guerrero, Lopez and Flores",29762,35934.55
+PROD0194,Home Item 194,Home,General,Rosales PLC,39043,59602.55
+PROD0195,Beauty Item 195,Beauty,General,Murphy-Morris,18698,28098.55
+PROD0196,Beauty Item 196,Beauty,General,Flynn Ltd,6826,10622.49
+PROD0197,Beauty Item 197,Beauty,General,Fischer-Santos,46264,57340.24
+PROD0198,Beauty Item 198,Beauty,General,Moreno-Potts,1804,2056.4
+PROD0199,Home Item 199,Home,General,"Patterson, Vargas and Manning",28172,39071.04
+PROD0200,Groceries Item 200,Groceries,General,Barrera Group,46783,51531.08
+PROD0201,Electronics Item 201,Electronics,General,"Ramos, Pena and Andrews",23295,40891.4
+PROD0202,Groceries Item 202,Groceries,General,Hanna-Carr,35839,47868.8
+PROD0203,Beauty Item 203,Beauty,General,"Harris, Jones and Russo",26454,32590.97
+PROD0204,Electronics Item 204,Electronics,General,Andrews and Sons,752,996.58
+PROD0205,Electronics Item 205,Electronics,General,Cannon-Singh,21906,36511.37
+PROD0206,Fashion Item 206,Fashion,General,Matthews and Sons,16508,28400.48
+PROD0207,Groceries Item 207,Groceries,General,Weber-Rodriguez,36533,58337.69
+PROD0208,Fashion Item 208,Fashion,General,Mason-Anderson,36751,58154
+PROD0209,Home Item 209,Home,General,Mills PLC,40866,49841.86
+PROD0210,Beauty Item 210,Beauty,General,Curry-Ortega,40572,46402.74
+PROD0211,Home Item 211,Home,General,"Wells, Crawford and Phillips",26590,39188
+PROD0212,Home Item 212,Home,General,Moss-Ellis,11248,18849.9
+PROD0213,Home Item 213,Home,General,Hartman PLC,16495,28049.02
+PROD0214,Groceries Item 214,Groceries,General,Smith LLC,36925,66282.61
+PROD0215,Groceries Item 215,Groceries,General,"Sullivan, Nguyen and Young",33372,50945.35
+PROD0216,Home Item 216,Home,General,Ford Ltd,44617,73739.53
+PROD0217,Groceries Item 217,Groceries,General,Maynard PLC,14556,24311.29
+PROD0218,Home Item 218,Home,General,Moore Group,49454,57283.12
+PROD0219,Fashion Item 219,Fashion,General,"Holt, Schneider and Dickson",42115,49688.6
+PROD0220,Beauty Item 220,Beauty,General,Scott-Shelton,49654,83369.37
+PROD0221,Home Item 221,Home,General,Adams and Sons,12102,16680.85
+PROD0222,Electronics Item 222,Electronics,General,Dyer LLC,16741,23501.64
+PROD0223,Fashion Item 223,Fashion,General,Porter-Andrews,7621,8387.48
+PROD0224,Electronics Item 224,Electronics,General,Williams Group,12943,15642.09
+PROD0225,Beauty Item 225,Beauty,General,"Mayer, Nunez and Fitzgerald",10779,13374.45
+PROD0226,Groceries Item 226,Groceries,General,Mason Ltd,47482,72464.26
+PROD0227,Electronics Item 227,Electronics,General,"Washington, Griffith and Munoz",44607,65946.76
+PROD0228,Beauty Item 228,Beauty,General,"Wiggins, Santiago and Simon",48412,86152.62
+PROD0229,Fashion Item 229,Fashion,General,Franco-Rivera,12744,18131.66
+PROD0230,Beauty Item 230,Beauty,General,Hawkins-Johnson,48231,81958.79
+PROD0231,Beauty Item 231,Beauty,General,Williams Inc,31752,42158.93
+PROD0232,Electronics Item 232,Electronics,General,Norton-Booker,27111,47901.54
+PROD0233,Home Item 233,Home,General,"Russell, Schultz and Solis",32809,44946.69
+PROD0234,Electronics Item 234,Electronics,General,"Wilson, Davis and Manning",28188,45914.37
+PROD0235,Fashion Item 235,Fashion,General,Fleming LLC,38642,47024.75
+PROD0236,Beauty Item 236,Beauty,General,Thomas Ltd,34752,40670.81
+PROD0237,Fashion Item 237,Fashion,General,"Johnson, Patel and Miller",16711,27393.13
+PROD0238,Beauty Item 238,Beauty,General,"Brown, Villarreal and Daniel",8851,12630.04
+PROD0239,Home Item 239,Home,General,Ramirez-Hart,27353,32324.28
+PROD0240,Beauty Item 240,Beauty,General,Carlson-Holmes,46033,54202.4
+PROD0241,Beauty Item 241,Beauty,General,"Young, Davis and Benson",27959,42097.55
+PROD0242,Beauty Item 242,Beauty,General,Williamson-Moore,42656,54295.32
+PROD0243,Fashion Item 243,Fashion,General,"Hardy, Craig and Horton",23433,36614.5
+PROD0244,Groceries Item 244,Groceries,General,Olson-Vance,48631,76491.21
+PROD0245,Groceries Item 245,Groceries,General,Tucker-Robbins,46473,63833.1
+PROD0246,Fashion Item 246,Fashion,General,Kemp-Lee,46108,81488.45
+PROD0247,Home Item 247,Home,General,"Price, Mcgee and Perez",35487,48586.34
+PROD0248,Groceries Item 248,Groceries,General,"Houston, Combs and Dunlap",40584,69354.58
+PROD0249,Beauty Item 249,Beauty,General,Reyes-Rubio,6673,7986.62
+PROD0250,Home Item 250,Home,General,Norton-Rogers,13878,18258.36
+PROD0251,Beauty Item 251,Beauty,General,Horton Ltd,39374,58897.72
+PROD0252,Groceries Item 252,Groceries,General,Brown Inc,23006,30558.99
+PROD0253,Beauty Item 253,Beauty,General,Thomas-Gilbert,18380,28853.18
+PROD0254,Electronics Item 254,Electronics,General,Hood PLC,29620,47887.3
+PROD0255,Groceries Item 255,Groceries,General,Martinez Ltd,38467,65515.35
+PROD0256,Electronics Item 256,Electronics,General,"Jackson, Williams and Hall",29666,38200.37
+PROD0257,Home Item 257,Home,General,Cardenas LLC,9853,16113.42
+PROD0258,Home Item 258,Home,General,Castro PLC,28225,42709.67
+PROD0259,Fashion Item 259,Fashion,General,Myers and Sons,4624,7560.84
+PROD0260,Beauty Item 260,Beauty,General,Dawson-Turner,41049,56542.95
+PROD0261,Electronics Item 261,Electronics,General,Davis-Campbell,37359,41195.51
+PROD0262,Beauty Item 262,Beauty,General,"Johnson, Smith and Nichols",30468,40062.24
+PROD0263,Home Item 263,Home,General,Rivera and Sons,17205,25659.62
+PROD0264,Beauty Item 264,Beauty,General,"Powell, Allen and Spencer",37919,49255.21
+PROD0265,Fashion Item 265,Fashion,General,"Lopez, Jones and Stephens",5432,9601.2
+PROD0266,Groceries Item 266,Groceries,General,Lee Group,40363,67058.6
+PROD0267,Fashion Item 267,Fashion,General,Mitchell-Mcdaniel,7875,10927.88
+PROD0268,Groceries Item 268,Groceries,General,"Griffin, Miller and Lopez",19438,32796.32
+PROD0269,Beauty Item 269,Beauty,General,Gill and Sons,41782,56002.67
+PROD0270,Home Item 270,Home,General,Dean-Barajas,48542,73156.07
+PROD0271,Beauty Item 271,Beauty,General,Wilson PLC,7500,13485.52
+PROD0272,Fashion Item 272,Fashion,General,Bryant PLC,38791,57162.14
+PROD0273,Fashion Item 273,Fashion,General,Davis-Church,19506,25771.83
+PROD0274,Beauty Item 274,Beauty,General,Phillips Group,11422,17864.2
+PROD0275,Beauty Item 275,Beauty,General,"Flores, Smith and Taylor",26353,45144.98
+PROD0276,Fashion Item 276,Fashion,General,Dominguez-Newton,11700,13838.61
+PROD0277,Electronics Item 277,Electronics,General,Daniels PLC,11249,15511.58
+PROD0278,Home Item 278,Home,General,"Martinez, King and Reyes",3061,4217.13
+PROD0279,Fashion Item 279,Fashion,General,Campos PLC,36733,55881.2
+PROD0280,Electronics Item 280,Electronics,General,"Marshall, Barton and Stein",1684,2842.44
+PROD0281,Groceries Item 281,Groceries,General,Cooper-Carter,18231,26877.03
+PROD0282,Fashion Item 282,Fashion,General,Jones Group,23999,35135.94
+PROD0283,Groceries Item 283,Groceries,General,Casey-Martinez,535,796.83
+PROD0284,Beauty Item 284,Beauty,General,Ray-Phillips,38060,56666.82
+PROD0285,Electronics Item 285,Electronics,General,"Vazquez, Larsen and Le",22119,31801.09
+PROD0286,Beauty Item 286,Beauty,General,"Woods, Jenkins and Johnson",36614,46348.67
+PROD0287,Beauty Item 287,Beauty,General,Lester-Ellis,48793,69852.49
+PROD0288,Electronics Item 288,Electronics,General,Duran Ltd,36763,49385.32
+PROD0289,Groceries Item 289,Groceries,General,Lucero LLC,1454,1751.44
+PROD0290,Home Item 290,Home,General,Oneill-Henry,24784,43140
+PROD0291,Electronics Item 291,Electronics,General,Poole-Whitney,541,675.71
+PROD0292,Fashion Item 292,Fashion,General,Yang-Chavez,47699,65503.33
+PROD0293,Home Item 293,Home,General,Chavez and Sons,7173,10863.66
+PROD0294,Beauty Item 294,Beauty,General,Juarez PLC,23823,36962.21
+PROD0295,Electronics Item 295,Electronics,General,"Ball, Parsons and Kirk",23924,32804.15
+PROD0296,Electronics Item 296,Electronics,General,Chaney-Anderson,37066,47546.1
+PROD0297,Beauty Item 297,Beauty,General,"Shah, Campos and Howard",13055,21904.04
+PROD0298,Beauty Item 298,Beauty,General,Cooley-Garcia,44079,74549.47
+PROD0299,Fashion Item 299,Fashion,General,Williams and Sons,28811,40743.88
+PROD0300,Electronics Item 300,Electronics,General,Davis-Moore,33441,54603.1
+PROD0301,Electronics Item 301,Electronics,General,Torres-Allison,43336,51258.71
+PROD0302,Home Item 302,Home,General,"Rose, Ford and Sanchez",11116,15452.48
+PROD0303,Electronics Item 303,Electronics,General,Taylor-Taylor,2546,3001.99
+PROD0304,Groceries Item 304,Groceries,General,Campbell Ltd,28531,38820.79
+PROD0305,Electronics Item 305,Electronics,General,Wagner Ltd,3619,4565.91
+PROD0306,Fashion Item 306,Fashion,General,"Gonzalez, Cox and Kent",20358,35927.51
+PROD0307,Fashion Item 307,Fashion,General,Andersen Inc,9119,13870.15
+PROD0308,Electronics Item 308,Electronics,General,Prince Ltd,26281,37812.15
+PROD0309,Fashion Item 309,Fashion,General,Edwards Group,28152,41975.71
+PROD0310,Home Item 310,Home,General,Robinson-Vazquez,25025,30414.99
+PROD0311,Electronics Item 311,Electronics,General,Ryan and Sons,25261,30293.86
+PROD0312,Groceries Item 312,Groceries,General,Brown LLC,8156,10819.14
+PROD0313,Fashion Item 313,Fashion,General,"Sawyer, Garcia and Franklin",40560,61576.15
+PROD0314,Home Item 314,Home,General,"Knight, Griffin and Perkins",9473,12511.92
+PROD0315,Home Item 315,Home,General,Smith-Robinson,12182,14971.26
+PROD0316,Groceries Item 316,Groceries,General,Sloan LLC,8684,13254.32
+PROD0317,Fashion Item 317,Fashion,General,Lawson-Reid,15960,19963.06
+PROD0318,Fashion Item 318,Fashion,General,Ramos Ltd,29308,48510.3
+PROD0319,Fashion Item 319,Fashion,General,"Gonzalez, Murphy and Cabrera",33196,43656.47
+PROD0320,Home Item 320,Home,General,Mcdaniel-Torres,20395,30160.71
+PROD0321,Fashion Item 321,Fashion,General,"Marsh, Martin and Warren",24903,37805.28
+PROD0322,Beauty Item 322,Beauty,General,Matthews and Sons,29144,38714.32
+PROD0323,Electronics Item 323,Electronics,General,Phillips-Anderson,15688,23125.12
+PROD0324,Fashion Item 324,Fashion,General,"Moore, Parks and Gallagher",900,1298.13
+PROD0325,Electronics Item 325,Electronics,General,"Smith, Thompson and Clayton",9490,12348.66
+PROD0326,Fashion Item 326,Fashion,General,"Walters, Parker and Ochoa",14797,17329.35
+PROD0327,Beauty Item 327,Beauty,General,"Wilkins, Swanson and Henry",4193,4622.06
+PROD0328,Groceries Item 328,Groceries,General,"Freeman, Johnson and Obrien",26346,31336.14
+PROD0329,Groceries Item 329,Groceries,General,Oneill-Jackson,6490,11366.34
+PROD0330,Electronics Item 330,Electronics,General,Phillips PLC,47497,78151.23
+PROD0331,Groceries Item 331,Groceries,General,Ward Inc,42449,50948.58
+PROD0332,Home Item 332,Home,General,"Stewart, Poole and Chambers",32917,39827.5
+PROD0333,Fashion Item 333,Fashion,General,Mcclain and Sons,35631,55220.09
+PROD0334,Groceries Item 334,Groceries,General,Lester Ltd,40967,55000.39
+PROD0335,Fashion Item 335,Fashion,General,Valdez Ltd,47185,74201.94
+PROD0336,Beauty Item 336,Beauty,General,"Miller, Kelly and Adams",21781,26565.82
+PROD0337,Beauty Item 337,Beauty,General,"Olson, Smith and Young",44316,58217.56
+PROD0338,Fashion Item 338,Fashion,General,Guzman-Casey,9671,15463.56
+PROD0339,Fashion Item 339,Fashion,General,Sanders Inc,7145,9890.51
+PROD0340,Beauty Item 340,Beauty,General,Gibbs-Brewer,21975,31698.44
+PROD0341,Beauty Item 341,Beauty,General,"Robinson, Weber and Johnson",6007,8494.13
+PROD0342,Electronics Item 342,Electronics,General,"Craig, Cole and Ferguson",22519,39213.82
+PROD0343,Beauty Item 343,Beauty,General,Lopez and Sons,42228,47844.94
+PROD0344,Fashion Item 344,Fashion,General,"Wheeler, Whitaker and May",39774,46333.62
+PROD0345,Home Item 345,Home,General,Hodges-Tran,30260,39794.3
+PROD0346,Home Item 346,Home,General,"Hudson, Parks and Choi",15594,25500.56
+PROD0347,Groceries Item 347,Groceries,General,"Robertson, Hartman and Petersen",23871,39164.29
+PROD0348,Fashion Item 348,Fashion,General,Davis-Baker,29228,50029.32
+PROD0349,Fashion Item 349,Fashion,General,Washington Inc,7848,13210.43
+PROD0350,Home Item 350,Home,General,Davis Inc,8304,11206.12
+PROD0351,Fashion Item 351,Fashion,General,"Mccullough, Mckinney and Ramos",46527,77422.99
+PROD0352,Beauty Item 352,Beauty,General,Coleman-Moore,30611,37945.61
+PROD0353,Fashion Item 353,Fashion,General,"Jimenez, Chandler and Cain",40020,49713.73
+PROD0354,Fashion Item 354,Fashion,General,Thomas and Sons,15662,22581.96
+PROD0355,Beauty Item 355,Beauty,General,Black-Riddle,2484,3118.84
+PROD0356,Electronics Item 356,Electronics,General,"Sanders, Flores and Lopez",35224,44115.99
+PROD0357,Electronics Item 357,Electronics,General,Mcdaniel-Alvarez,4998,7906.17
+PROD0358,Groceries Item 358,Groceries,General,Pierce-Cordova,42725,62584.26
+PROD0359,Beauty Item 359,Beauty,General,Chandler and Sons,12441,17404.79
+PROD0360,Electronics Item 360,Electronics,General,"Mcintosh, Moore and Norris",34118,48860.52
+PROD0361,Beauty Item 361,Beauty,General,"Marquez, Tran and Mcbride",11974,19978.13
+PROD0362,Beauty Item 362,Beauty,General,"Edwards, Larson and Jackson",4977,6703.22
+PROD0363,Groceries Item 363,Groceries,General,Gilmore-Wright,31951,47297.5
+PROD0364,Groceries Item 364,Groceries,General,Johnson Group,1131,1469.93
+PROD0365,Beauty Item 365,Beauty,General,Ramirez Inc,28994,35626.9
+PROD0366,Electronics Item 366,Electronics,General,"Smith, Gonzales and Townsend",21042,25820.16
+PROD0367,Home Item 367,Home,General,Sparks-Stevenson,45818,60205.34
+PROD0368,Fashion Item 368,Fashion,General,Valdez-Cook,43812,54716.58
+PROD0369,Fashion Item 369,Fashion,General,"Davis, Summers and Smith",48271,60748.97
+PROD0370,Beauty Item 370,Beauty,General,Brown-Beck,3776,4421.96
+PROD0371,Beauty Item 371,Beauty,General,"Edwards, Ball and Gross",7537,10170.19
+PROD0372,Home Item 372,Home,General,Wilson-Tran,12820,16727.23
+PROD0373,Home Item 373,Home,General,Erickson-Ray,33042,38372.85
+PROD0374,Home Item 374,Home,General,"Brown, Chavez and Cameron",29512,47798.07
+PROD0375,Groceries Item 375,Groceries,General,"Wilson, Walker and Underwood",39329,65535.9
+PROD0376,Beauty Item 376,Beauty,General,"Jackson, Avery and Kelley",4779,8558.5
+PROD0377,Groceries Item 377,Groceries,General,Hernandez-Alvarez,14256,23801
+PROD0378,Groceries Item 378,Groceries,General,Williams-Baxter,39012,59423.89
+PROD0379,Fashion Item 379,Fashion,General,Tran Group,25146,38734.23
+PROD0380,Home Item 380,Home,General,Martin-Powell,17669,31453.79
+PROD0381,Fashion Item 381,Fashion,General,"Martin, Haley and Parrish",3951,6032.05
+PROD0382,Beauty Item 382,Beauty,General,Smith PLC,38893,64298.2
+PROD0383,Electronics Item 383,Electronics,General,"Reyes, Moore and Smith",7850,8899.99
+PROD0384,Beauty Item 384,Beauty,General,"Webster, Sweeney and Simmons",36813,49263.12
+PROD0385,Groceries Item 385,Groceries,General,"Johnson, Gutierrez and Ramirez",38343,42632.56
+PROD0386,Groceries Item 386,Groceries,General,Clark Group,45310,72324.24
+PROD0387,Groceries Item 387,Groceries,General,"Christensen, Velez and Sandoval",6739,10735.16
+PROD0388,Beauty Item 388,Beauty,General,Ross-Conner,39457,54715.78
+PROD0389,Beauty Item 389,Beauty,General,"Greene, Miles and Bass",19538,33863.68
+PROD0390,Groceries Item 390,Groceries,General,"Hall, Patterson and Flores",43134,56348.81
+PROD0391,Fashion Item 391,Fashion,General,Richardson LLC,48742,85616.21
+PROD0392,Beauty Item 392,Beauty,General,Foley PLC,19999,30668.01
+PROD0393,Beauty Item 393,Beauty,General,Rosales PLC,47960,68125.97
+PROD0394,Fashion Item 394,Fashion,General,Williams-Nelson,29207,35617.57
+PROD0395,Fashion Item 395,Fashion,General,Mclean-Adams,32630,43398.4
+PROD0396,Beauty Item 396,Beauty,General,Thompson-Glass,23341,37998.3
+PROD0397,Groceries Item 397,Groceries,General,Young-Banks,34468,55815
+PROD0398,Beauty Item 398,Beauty,General,Lowe Inc,3864,4734.97
+PROD0399,Electronics Item 399,Electronics,General,"Garcia, Adams and Oconnor",29408,47689.03
+PROD0400,Home Item 400,Home,General,Fischer-Dixon,48415,71517.15
+PROD0401,Electronics Item 401,Electronics,General,Diaz-Dougherty,9521,12467.44
+PROD0402,Beauty Item 402,Beauty,General,Mcpherson-Fernandez,12790,19792.63
+PROD0403,Home Item 403,Home,General,Brown-Williams,5870,8355.86
+PROD0404,Fashion Item 404,Fashion,General,Ball-Park,49692,74857.01
+PROD0405,Fashion Item 405,Fashion,General,Mathews-Mercer,17715,30962.43
+PROD0406,Electronics Item 406,Electronics,General,Kirk-Ashley,17924,29688.66
+PROD0407,Groceries Item 407,Groceries,General,Evans-Martinez,28382,41081.18
+PROD0408,Groceries Item 408,Groceries,General,Jordan LLC,34780,62480.17
+PROD0409,Beauty Item 409,Beauty,General,"Lewis, George and Martin",7368,8532.88
+PROD0410,Groceries Item 410,Groceries,General,Martinez-Oconnor,42324,47435.87
+PROD0411,Beauty Item 411,Beauty,General,Hoffman and Sons,33450,44796.35
+PROD0412,Home Item 412,Home,General,Suarez and Sons,35651,42062.97
+PROD0413,Electronics Item 413,Electronics,General,Conrad Inc,38387,48829.54
+PROD0414,Home Item 414,Home,General,"George, Padilla and Bray",35808,41388.69
+PROD0415,Fashion Item 415,Fashion,General,Erickson PLC,38277,42408.99
+PROD0416,Electronics Item 416,Electronics,General,"Cummings, White and Gutierrez",48858,80930.77
+PROD0417,Beauty Item 417,Beauty,General,"Wilson, Young and Ramos",41805,70740.17
+PROD0418,Electronics Item 418,Electronics,General,Perez-Small,29682,42374.24
+PROD0419,Electronics Item 419,Electronics,General,Huff LLC,24774,32724.87
+PROD0420,Beauty Item 420,Beauty,General,Riley-Bates,28367,49563.62
+PROD0421,Beauty Item 421,Beauty,General,Greene-Gutierrez,14113,17707.69
+PROD0422,Fashion Item 422,Fashion,General,Dalton-Martinez,6360,9791.87
+PROD0423,Fashion Item 423,Fashion,General,Mccall PLC,49292,71631.86
+PROD0424,Electronics Item 424,Electronics,General,Beck-Kelley,49949,80185.06
+PROD0425,Electronics Item 425,Electronics,General,Mills Inc,44339,58655.7
+PROD0426,Groceries Item 426,Groceries,General,"Martinez, Schwartz and Taylor",44627,61415.44
+PROD0427,Electronics Item 427,Electronics,General,Hansen-White,8486,12754.21
+PROD0428,Beauty Item 428,Beauty,General,"Cunningham, Newton and Allen",5731,6345.96
+PROD0429,Beauty Item 429,Beauty,General,Rowe Inc,8734,14821.44
+PROD0430,Home Item 430,Home,General,"Hodge, Keller and Newton",20644,24650.6
+PROD0431,Fashion Item 431,Fashion,General,"Reid, Hawkins and Ramos",23408,27735.76
+PROD0432,Home Item 432,Home,General,Jones-Vaughn,3269,4909.31
+PROD0433,Beauty Item 433,Beauty,General,"Wilson, Hansen and Castaneda",22001,36927.5
+PROD0434,Electronics Item 434,Electronics,General,Joyce Ltd,33417,53534.88
+PROD0435,Electronics Item 435,Electronics,General,Dominguez-Ruiz,19073,25355.99
+PROD0436,Groceries Item 436,Groceries,General,Thompson Inc,20117,25116.56
+PROD0437,Home Item 437,Home,General,"Chandler, Weiss and Johns",14038,19376.97
+PROD0438,Fashion Item 438,Fashion,General,"Jones, Boyd and Baker",46189,76514.5
+PROD0439,Beauty Item 439,Beauty,General,"Mckenzie, Blackwell and Smith",33018,41072.71
+PROD0440,Home Item 440,Home,General,Jones-Edwards,9665,16822.02
+PROD0441,Electronics Item 441,Electronics,General,"Arnold, Roberts and Webb",14723,23308.64
+PROD0442,Beauty Item 442,Beauty,General,Williams PLC,47726,72529.62
+PROD0443,Beauty Item 443,Beauty,General,Harris and Sons,16578,20661
+PROD0444,Groceries Item 444,Groceries,General,Gallegos-Martin,41045,46883.55
+PROD0445,Electronics Item 445,Electronics,General,"Turner, Allen and Foster",41566,55436.76
+PROD0446,Fashion Item 446,Fashion,General,Reese Group,49735,84006.79
+PROD0447,Home Item 447,Home,General,"Manning, Hanson and Scott",6421,8711.39
+PROD0448,Fashion Item 448,Fashion,General,Peters Group,30014,47000.77
+PROD0449,Electronics Item 449,Electronics,General,Berger Group,43141,57550.9
+PROD0450,Home Item 450,Home,General,"Jones, Henry and Gill",25113,31832.89
+PROD0451,Home Item 451,Home,General,"Morrison, Hess and Reyes",37730,46413.79
+PROD0452,Fashion Item 452,Fashion,General,Goodwin Group,8081,9461.91
+PROD0453,Fashion Item 453,Fashion,General,"Flores, Alvarado and Boyle",16628,22863.85
+PROD0454,Beauty Item 454,Beauty,General,Johnson Inc,3291,5140.6
+PROD0455,Beauty Item 455,Beauty,General,Jensen Ltd,16227,23205.84
+PROD0456,Groceries Item 456,Groceries,General,"Allen, Lewis and Hoover",30445,34089.91
+PROD0457,Groceries Item 457,Groceries,General,Watson-Ward,36197,54880.12
+PROD0458,Home Item 458,Home,General,Patel-Villanueva,27360,30185.75
+PROD0459,Groceries Item 459,Groceries,General,Harper-Cox,19832,24273.62
+PROD0460,Electronics Item 460,Electronics,General,"Douglas, Green and Cisneros",25253,42047.93
+PROD0461,Fashion Item 461,Fashion,General,Rivas-Jacobs,5001,8361.17
+PROD0462,Home Item 462,Home,General,"Mccarthy, Tucker and Hall",5516,6202.59
+PROD0463,Electronics Item 463,Electronics,General,Mccullough-Gonzalez,41358,74420.54
+PROD0464,Home Item 464,Home,General,"Ochoa, Wilkinson and Rasmussen",21689,33492.68
+PROD0465,Groceries Item 465,Groceries,General,"Nelson, Henry and Hernandez",22438,33091.32
+PROD0466,Fashion Item 466,Fashion,General,Gordon-Murray,27343,45929.81
+PROD0467,Electronics Item 467,Electronics,General,Gonzalez LLC,24964,44294.48
+PROD0468,Electronics Item 468,Electronics,General,Silva Ltd,12880,20202.22
+PROD0469,Beauty Item 469,Beauty,General,Ibarra Inc,580,692.96
+PROD0470,Groceries Item 470,Groceries,General,Collins Inc,1042,1338.8
+PROD0471,Home Item 471,Home,General,Richmond-Hull,28005,34893.43
+PROD0472,Groceries Item 472,Groceries,General,Mitchell-Bennett,33865,57931.29
+PROD0473,Fashion Item 473,Fashion,General,Mack-Simpson,42034,53862.96
+PROD0474,Fashion Item 474,Fashion,General,Macdonald-Sanders,30206,35680.58
+PROD0475,Beauty Item 475,Beauty,General,Smith PLC,15567,23574.42
+PROD0476,Groceries Item 476,Groceries,General,Douglas-Parker,1916,2879.25
+PROD0477,Beauty Item 477,Beauty,General,"Lara, Andrews and Lambert",3442,4794.27
+PROD0478,Home Item 478,Home,General,Dean Ltd,17547,27840.43
+PROD0479,Beauty Item 479,Beauty,General,Williams Group,41571,73814.84
+PROD0480,Electronics Item 480,Electronics,General,Perez LLC,37833,46216.43
+PROD0481,Beauty Item 481,Beauty,General,Garcia PLC,35665,58293.44
+PROD0482,Fashion Item 482,Fashion,General,Kane Inc,40717,59300.37
+PROD0483,Fashion Item 483,Fashion,General,"Robinson, Clark and Perez",21465,34946.72
+PROD0484,Fashion Item 484,Fashion,General,Hansen-Strickland,7832,13306.37
+PROD0485,Groceries Item 485,Groceries,General,"Mason, Alexander and Clarke",22038,32535.72
+PROD0486,Home Item 486,Home,General,Miller Inc,9398,15902.36
+PROD0487,Electronics Item 487,Electronics,General,Vaughn LLC,30221,38867.76
+PROD0488,Groceries Item 488,Groceries,General,Lopez-Lowe,1894,2934.3
+PROD0489,Home Item 489,Home,General,"Bryant, Cooper and Spencer",36728,65078.3
+PROD0490,Electronics Item 490,Electronics,General,Avila Ltd,7424,12103.28
+PROD0491,Fashion Item 491,Fashion,General,Brown-Robinson,47741,78102.68
+PROD0492,Electronics Item 492,Electronics,General,"Adams, Smith and Clayton",13810,18140.08
+PROD0493,Groceries Item 493,Groceries,General,Allen-Velasquez,39208,56958
+PROD0494,Beauty Item 494,Beauty,General,"Stone, King and Walker",4760,6926.18
+PROD0495,Groceries Item 495,Groceries,General,Simpson Inc,36438,52067.18
+PROD0496,Fashion Item 496,Fashion,General,Mullen-Ward,34052,42759.48
+PROD0497,Groceries Item 497,Groceries,General,"Brady, Rodriguez and Greer",14554,20132.43
+PROD0498,Home Item 498,Home,General,Collins-Stewart,29958,33245.81
+PROD0499,Fashion Item 499,Fashion,General,"Johnson, Brown and Strickland",6679,8434.13
+PROD0500,Electronics Item 500,Electronics,General,Lucas and Sons,40152,44517.3
