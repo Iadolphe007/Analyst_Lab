@@ -314,11 +314,20 @@ UNION ALL
 SELECT 'Organizations', COUNT(*)
 FROM organizations_clean;
 
+-------------------------------
+
 SELECT COUNT(*) AS encounters_stage_count
 FROM encounters_clean;
+SELECT COUNT(*) AS encounters_stage_count
+FROM encounters_stage;
 
 SELECT COUNT(*) AS procedures_stage_count
 FROM procedures_clean;
 
 SELECT COUNT(*) AS procedures_stage_count
 FROM procedures_stage;
+
+drop table procedures_stage;
+drop table encounters_stage;
+drop table procedures_clean;
+drop table encounters_clean;
