@@ -769,3 +769,337 @@ FROM payers_final
 WHERE ZIP IS NOT NULL
   AND LENGTH(ZIP) <> 5;
   
+-- DATA ANALYSIS
+
+-- PATIENTS DEMOGRAPHICS
+
+-- Total patients
+SELECT COUNT(*) AS total_patients
+FROM patients_final;
+
+-- Gender distribution
+SELECT GENDER, COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY GENDER
+ORDER BY patient_count DESC;
+
+-- Race distribution
+SELECT RACE, COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY RACE
+ORDER BY patient_count DESC;
+
+-- Ethnicity distribution
+SELECT ETHNICITY, COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY ETHNICITY
+ORDER BY patient_count DESC;
+
+SELECT * FROM patients_final
+where ETHNICITY = "non-hispanic";
+
+-- Patients by state
+SELECT STATE, COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY STATE
+ORDER BY patient_count DESC;
+
+-- Patient age distribution
+
+SELECT
+    CASE
+        WHEN TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()) < 18
+            THEN 'Under 18'
+        WHEN TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()) BETWEEN 18 AND 29
+            THEN '18–29'
+        WHEN TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()) BETWEEN 30 AND 44
+            THEN '30–44'
+        WHEN TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()) BETWEEN 45 AND 59
+            THEN '45–59'
+        WHEN TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()) >= 60
+            THEN '60+'
+        ELSE 'Unknown'
+    END AS age_group,
+    COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY age_group
+ORDER BY MIN(TIMESTAMPDIFF(YEAR, BIRTHDATE, CURDATE()));
+
+-- Procedure analysis
+
+-- Total procedures
+SELECT COUNT(*) AS total_procedures
+FROM procedures_final;
+
+-- Most frequent procedures
+SELECT
+    CODE,
+    DESCRIPTION,
+    COUNT(*) AS procedure_count
+FROM procedures_final
+GROUP BY CODE, DESCRIPTION
+ORDER BY procedure_count DESC
+LIMIT 10;
+
+-- Procedures by year
+SELECT
+    YEAR(START) AS procedure_year,
+    COUNT(*) AS procedure_count
+FROM procedures_final
+GROUP BY YEAR(START)
+ORDER BY procedure_year;
+
+-- Average procedure cost
+SELECT
+    ROUND(AVG(BASE_COST), 2) AS average_procedure_cost,
+    ROUND(MIN(BASE_COST), 2) AS minimum_procedure_cost,
+    ROUND(MAX(BASE_COST), 2) AS maximum_procedure_cost
+FROM procedures_final;
+
+-- Financial overview
+
+SELECT
+    ROUND(SUM(BASE_ENCOUNTER_COST), 2) AS total_base_cost,
+    ROUND(SUM(TOTAL_CLAIM_COST), 2) AS total_claim_cost,
+    ROUND(SUM(PAYER_COVERAGE), 2) AS total_payer_coverage,
+    ROUND(AVG(TOTAL_CLAIM_COST), 2) AS average_claim_cost
+FROM encounters_final;
+
+-- Payer analysis
+
+SELECT
+    p.NAME AS payer_name,
+    COUNT(e.Id) AS encounter_count,
+    ROUND(SUM(e.TOTAL_CLAIM_COST), 2) AS total_claim_cost,
+    ROUND(SUM(e.PAYER_COVERAGE), 2) AS total_coverage
+FROM encounters_final e
+LEFT JOIN payers_final p
+    ON e.PAYER = p.Id
+GROUP BY p.NAME
+ORDER BY total_claim_cost DESC;
+
+-- Top 10 patients by encounter volume
+
+SELECT
+    p.Id AS patient_id,
+    p.GENDER,
+    COUNT(e.Id) AS total_encounters
+FROM patients_final p
+JOIN encounters_final e
+    ON p.Id = e.PATIENT
+GROUP BY p.Id, p.GENDER
+ORDER BY total_encounters DESC
+LIMIT 10;
+
+-- Encounter volume by gender
+
+SELECT
+    p.GENDER,
+    COUNT(e.Id) AS total_encounters
+FROM patients_final p
+JOIN encounters_final e
+    ON p.Id = e.PATIENT
+GROUP BY p.GENDER
+ORDER BY total_encounters DESC;
+
+-- Average claim cost by encounter class
+
+SELECT
+    ENCOUNTERCLASS,
+    COUNT(*) AS encounter_count,
+    ROUND(AVG(TOTAL_CLAIM_COST), 2) AS average_claim_cost,
+    ROUND(SUM(TOTAL_CLAIM_COST), 2) AS total_claim_cost
+FROM encounters_final
+GROUP BY ENCOUNTERCLASS
+ORDER BY total_claim_cost DESC;
+
+-- Payer coverage percentage
+
+SELECT
+    p.NAME AS payer_name,
+    ROUND(SUM(e.TOTAL_CLAIM_COST), 2) AS total_claim_cost,
+    ROUND(SUM(e.PAYER_COVERAGE), 2) AS total_coverage,
+    ROUND(
+        100 * SUM(e.PAYER_COVERAGE) /
+        NULLIF(SUM(e.TOTAL_CLAIM_COST), 0),
+        2
+    ) AS coverage_percentage
+FROM encounters_final e
+LEFT JOIN payers_final p
+    ON e.PAYER = p.Id
+GROUP BY p.NAME
+ORDER BY coverage_percentage DESC;
+
+-- Monthly encounter trends
+
+SELECT
+    YEAR(START) AS encounter_year,
+    MONTH(START) AS encounter_month,
+    COUNT(*) AS encounter_count,
+    ROUND(SUM(TOTAL_CLAIM_COST), 2) AS total_claim_cost
+FROM encounters_final
+GROUP BY YEAR(START), MONTH(START)
+ORDER BY encounter_year, encounter_month;
+
+-- Procedures and their associated encounter classes
+
+SELECT
+    e.ENCOUNTERCLASS,
+    COUNT(pr.CODE) AS procedure_count,
+    ROUND(AVG(pr.BASE_COST), 2) AS average_procedure_cost,
+    ROUND(SUM(pr.BASE_COST), 2) AS total_procedure_cost
+FROM procedures_final pr
+JOIN encounters_final e
+    ON pr.ENCOUNTER = e.Id
+GROUP BY e.ENCOUNTERCLASS
+ORDER BY procedure_count DESC;
+
+-- Most common reasons for encounters
+
+SELECT
+    REASONDESCRIPTION,
+    COUNT(*) AS encounter_count
+FROM encounters_final
+WHERE REASONDESCRIPTION IS NOT NULL
+  AND TRIM(REASONDESCRIPTION) <> ''
+GROUP BY REASONDESCRIPTION
+ORDER BY encounter_count DESC
+LIMIT 10;
+
+-- Patient encounter frequency
+
+SELECT
+    COUNT(*) AS total_patients,
+    SUM(CASE WHEN encounter_count = 1 THEN 1 ELSE 0 END)
+        AS patients_with_one_encounter,
+    SUM(CASE WHEN encounter_count > 1 THEN 1 ELSE 0 END)
+        AS patients_with_multiple_encounters,
+    ROUND(AVG(encounter_count), 2) AS average_encounters_per_patient
+FROM (
+    SELECT PATIENT, COUNT(*) AS encounter_count
+    FROM encounters_final
+    GROUP BY PATIENT
+) AS patient_visits;
+
+-- CREATING SQL ANALYTICAL VIEW
+
+-- Create a patient demographics view
+
+CREATE OR REPLACE VIEW vw_patient_demographics AS
+SELECT
+    GENDER,
+    RACE,
+    ETHNICITY,
+    STATE,
+    COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY GENDER, RACE, ETHNICITY, STATE;
+
+-- Create an encounter summary view
+
+CREATE OR REPLACE VIEW vw_encounter_summary AS
+SELECT
+    ENCOUNTERCLASS,
+    COUNT(*) AS encounter_count,
+    ROUND(SUM(BASE_ENCOUNTER_COST), 2) AS total_base_cost,
+    ROUND(SUM(TOTAL_CLAIM_COST), 2) AS total_claim_cost,
+    ROUND(SUM(PAYER_COVERAGE), 2) AS total_payer_coverage,
+    ROUND(AVG(TOTAL_CLAIM_COST), 2) AS average_claim_cost
+FROM encounters_final
+GROUP BY ENCOUNTERCLASS;
+
+-- Create a monthly encounter trends view
+CREATE OR REPLACE VIEW vw_monthly_encounter_trends AS
+SELECT
+    YEAR(START) AS encounter_year,
+    MONTH(START) AS encounter_month,
+    COUNT(*) AS encounter_count,
+    ROUND(SUM(TOTAL_CLAIM_COST), 2) AS total_claim_cost,
+    ROUND(SUM(PAYER_COVERAGE), 2) AS total_payer_coverage
+FROM encounters_final
+WHERE START IS NOT NULL
+GROUP BY YEAR(START), MONTH(START);
+
+-- Create a payer performance view
+
+CREATE OR REPLACE VIEW vw_payer_analysis AS
+SELECT
+    COALESCE(p.NAME, 'Unmatched or missing payer') AS payer_name,
+    COUNT(e.Id) AS encounter_count,
+    ROUND(SUM(e.TOTAL_CLAIM_COST), 2) AS total_claim_cost,
+    ROUND(SUM(e.PAYER_COVERAGE), 2) AS total_payer_coverage,
+    ROUND(
+        100 * SUM(e.PAYER_COVERAGE) /
+        NULLIF(SUM(e.TOTAL_CLAIM_COST), 0),
+        2
+    ) AS coverage_percentage
+FROM encounters_final e
+LEFT JOIN payers_final p
+    ON e.PAYER = p.Id
+GROUP BY p.NAME;
+
+-- Create a procedure analysis view
+CREATE OR REPLACE VIEW vw_procedure_analysis AS
+SELECT
+    CODE,
+    DESCRIPTION,
+    COUNT(*) AS procedure_count,
+    ROUND(SUM(BASE_COST), 2) AS total_procedure_cost,
+    ROUND(AVG(BASE_COST), 2) AS average_procedure_cost
+FROM procedures_final
+GROUP BY CODE, DESCRIPTION;
+
+-- Create a patient encounter frequency view
+
+CREATE OR REPLACE VIEW vw_patient_encounter_frequency AS
+SELECT
+    p.Id AS patient_id,
+    p.GENDER,
+    p.RACE,
+    p.ETHNICITY,
+    COUNT(e.Id) AS encounter_count
+FROM patients_final p
+LEFT JOIN encounters_final e
+    ON p.Id = e.PATIENT
+GROUP BY p.Id, p.GENDER, p.RACE, p.ETHNICITY;
+
+-- Create a common encounter reasons view
+
+CREATE OR REPLACE VIEW vw_encounter_reasons AS
+SELECT
+    REASONCODE,
+    REASONDESCRIPTION,
+    COUNT(*) AS encounter_count
+FROM encounters_final
+WHERE REASONDESCRIPTION IS NOT NULL
+  AND TRIM(REASONDESCRIPTION) <> ''
+GROUP BY REASONCODE, REASONDESCRIPTION;
+
+-- VERIFYING IF VIEW WORKS
+
+SELECT * FROM vw_patient_demographics LIMIT 10;
+
+SELECT * FROM vw_encounter_summary;
+
+SELECT * FROM vw_monthly_encounter_trends LIMIT 20;
+
+SELECT * FROM vw_payer_analysis;
+
+SELECT * FROM vw_procedure_analysis
+ORDER BY procedure_count DESC
+LIMIT 10;
+
+SELECT * FROM vw_patient_encounter_frequency LIMIT 10;
+
+SELECT * FROM vw_encounter_reasons
+ORDER BY encounter_count DESC
+LIMIT 10;
+
+SELECT
+    ETHNICITY,
+    COUNT(*) AS patient_count
+FROM patients_final
+GROUP BY ETHNICITY
+ORDER BY patient_count DESC;
+
+
