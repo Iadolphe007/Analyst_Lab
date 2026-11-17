@@ -1102,5 +1102,4 @@ FROM patients_final
 GROUP BY ETHNICITY
 ORDER BY patient_count DESC;
 
-
 SHOW TABLES;
