@@ -647,6 +647,6 @@ SELECT
 
 FROM power_consumption_clean;
 
--- 
+
 
 
