@@ -335,3 +335,318 @@ SELECT
 FROM power_consumption_clean
 LIMIT 15;
 
+-- Overall electricity consumption by zone
+
+SELECT
+    'Zone 1' AS Zone,
+    ROUND(AVG(PowerConsumption_Zone1), 2) AS Average_Consumption,
+    ROUND(MIN(PowerConsumption_Zone1), 2) AS Minimum_Consumption,
+    ROUND(MAX(PowerConsumption_Zone1), 2) AS Maximum_Consumption,
+    ROUND(STDDEV(PowerConsumption_Zone1), 2) AS Standard_Deviation
+FROM power_consumption_clean
+
+UNION ALL
+
+SELECT
+    'Zone 2',
+    ROUND(AVG(PowerConsumption_Zone2), 2),
+    ROUND(MIN(PowerConsumption_Zone2), 2),
+    ROUND(MAX(PowerConsumption_Zone2), 2),
+    ROUND(STDDEV(PowerConsumption_Zone2), 2)
+FROM power_consumption_clean
+
+UNION ALL
+
+SELECT
+    'Zone 3',
+    ROUND(AVG(PowerConsumption_Zone3), 2),
+    ROUND(MIN(PowerConsumption_Zone3), 2),
+    ROUND(MAX(PowerConsumption_Zone3), 2),
+    ROUND(STDDEV(PowerConsumption_Zone3), 2)
+FROM power_consumption_clean;
+
+(
+    SELECT
+        'Zone 1' AS Zone,
+        Datetime,
+        PowerConsumption_Zone1 AS Consumption
+    FROM power_consumption_clean
+    ORDER BY PowerConsumption_Zone1 DESC
+    LIMIT 1
+)
+
+UNION ALL
+
+(
+    SELECT
+        'Zone 2',
+        Datetime,
+        PowerConsumption_Zone2
+    FROM power_consumption_clean
+    ORDER BY PowerConsumption_Zone2 DESC
+    LIMIT 1
+)
+
+UNION ALL
+
+(
+    SELECT
+        'Zone 3',
+        Datetime,
+        PowerConsumption_Zone3
+    FROM power_consumption_clean
+    ORDER BY PowerConsumption_Zone3 DESC
+    LIMIT 1
+);
+
+
+
+-- Lowest consumption in each zone
+
+(
+    SELECT
+        'Zone 1' AS Zone,
+        Datetime,
+        PowerConsumption_Zone1 AS Consumption
+    FROM power_consumption_clean
+    ORDER BY PowerConsumption_Zone1 ASC
+    LIMIT 1
+)
+
+UNION ALL
+
+(
+    SELECT
+        'Zone 2',
+        Datetime,
+        PowerConsumption_Zone2
+    FROM power_consumption_clean
+    ORDER BY PowerConsumption_Zone2 ASC
+    LIMIT 1
+)
+
+UNION ALL
+
+(
+    SELECT
+        'Zone 3',
+        Datetime,
+        PowerConsumption_Zone3
+    FROM power_consumption_clean
+    ORDER BY PowerConsumption_Zone3 ASC
+    LIMIT 1
+);
+
+-- Analyse hourly consumption patterns
+
+SELECT
+    Hour,
+
+    ROUND(AVG(PowerConsumption_Zone1), 2) AS Zone1_Average,
+
+    ROUND(AVG(PowerConsumption_Zone2), 2) AS Zone2_Average,
+
+    ROUND(AVG(PowerConsumption_Zone3), 2) AS Zone3_Average
+
+FROM power_consumption_clean
+
+GROUP BY Hour
+
+ORDER BY Hour;
+
+-- Analyse daily and weekly consumption
+
+SELECT
+    Day_Of_Week,
+
+    DAYOFWEEK(Reading_Date) AS Day_Number,
+
+    ROUND(AVG(PowerConsumption_Zone1), 2) AS Zone1_Average,
+
+    ROUND(AVG(PowerConsumption_Zone2), 2) AS Zone2_Average,
+
+    ROUND(AVG(PowerConsumption_Zone3), 2) AS Zone3_Average
+
+FROM power_consumption_clean
+
+GROUP BY Day_Of_Week, DAYOFWEEK(Reading_Date)
+
+ORDER BY Day_Number;
+
+-- Analyse monthly consumption patterns
+
+SELECT
+    Month_Num,
+    Month_Name,
+
+    ROUND(AVG(PowerConsumption_Zone1), 2) AS Zone1_Average,
+
+    ROUND(AVG(PowerConsumption_Zone2), 2) AS Zone2_Average,
+
+    ROUND(AVG(PowerConsumption_Zone3), 2) AS Zone3_Average
+
+FROM power_consumption_clean
+
+GROUP BY Month_Num, Month_Name
+
+ORDER BY Month_Num;
+
+-- Compare the three zones over time
+
+SELECT
+    Month_Num,
+    Month_Name,
+    'Zone 1' AS Zone,
+    ROUND(AVG(PowerConsumption_Zone1), 2) AS Average_Consumption
+FROM power_consumption_clean
+GROUP BY Month_Num, Month_Name
+
+UNION ALL
+
+SELECT
+    Month_Num,
+    Month_Name,
+    'Zone 2',
+    ROUND(AVG(PowerConsumption_Zone2), 2)
+FROM power_consumption_clean
+GROUP BY Month_Num, Month_Name
+
+UNION ALL
+
+SELECT
+    Month_Num,
+    Month_Name,
+    'Zone 3',
+    ROUND(AVG(PowerConsumption_Zone3), 2)
+FROM power_consumption_clean
+GROUP BY Month_Num, Month_Name
+
+ORDER BY Month_Num, Zone;
+
+-- Average environmental conditions
+
+SELECT
+    ROUND(AVG(Temperature), 2) AS Average_Temperature,
+    ROUND(AVG(Humidity), 2) AS Average_Humidity,
+    ROUND(AVG(WindSpeed), 2) AS Average_WindSpeed,
+    ROUND(AVG(GeneralDiffuseFlows), 2) AS Average_GeneralDiffuseFlows,
+    ROUND(AVG(DiffuseFlows), 2) AS Average_DiffuseFlows
+FROM power_consumption_clean;
+
+-- Correlation between temperature and electricity consumption
+
+SELECT
+    ROUND(
+        (
+            AVG(Temperature * PowerConsumption_Zone1)
+            - AVG(Temperature) * AVG(PowerConsumption_Zone1)
+        ) /
+        (
+            STDDEV_POP(Temperature) *
+            STDDEV_POP(PowerConsumption_Zone1)
+        ), 4
+    ) AS Zone1_Temperature_Correlation,
+
+    ROUND(
+        (
+            AVG(Temperature * PowerConsumption_Zone2)
+            - AVG(Temperature) * AVG(PowerConsumption_Zone2)
+        ) /
+        (
+            STDDEV_POP(Temperature) *
+            STDDEV_POP(PowerConsumption_Zone2)
+        ), 4
+    ) AS Zone2_Temperature_Correlation,
+
+    ROUND(
+        (
+            AVG(Temperature * PowerConsumption_Zone3)
+            - AVG(Temperature) * AVG(PowerConsumption_Zone3)
+        ) /
+        (
+            STDDEV_POP(Temperature) *
+            STDDEV_POP(PowerConsumption_Zone3)
+        ), 4
+    ) AS Zone3_Temperature_Correlation
+
+FROM power_consumption_clean;
+
+-- Humidity and electricity consumption
+
+SELECT
+    ROUND(
+        (
+            AVG(Humidity * PowerConsumption_Zone1)
+            - AVG(Humidity) * AVG(PowerConsumption_Zone1)
+        ) /
+        (
+            STDDEV_POP(Humidity) *
+            STDDEV_POP(PowerConsumption_Zone1)
+        ), 4
+    ) AS Zone1_Humidity_Correlation,
+
+    ROUND(
+        (
+            AVG(Humidity * PowerConsumption_Zone2)
+            - AVG(Humidity) * AVG(PowerConsumption_Zone2)
+        ) /
+        (
+            STDDEV_POP(Humidity) *
+            STDDEV_POP(PowerConsumption_Zone2)
+        ), 4
+    ) AS Zone2_Humidity_Correlation,
+
+    ROUND(
+        (
+            AVG(Humidity * PowerConsumption_Zone3)
+            - AVG(Humidity) * AVG(PowerConsumption_Zone3)
+        ) /
+        (
+            STDDEV_POP(Humidity) *
+            STDDEV_POP(PowerConsumption_Zone3)
+        ), 4
+    ) AS Zone3_Humidity_Correlation
+
+FROM power_consumption_clean;
+
+-- Wind speed and electricity consumption
+
+SELECT
+    ROUND(
+        (
+            AVG(WindSpeed * PowerConsumption_Zone1)
+            - AVG(WindSpeed) * AVG(PowerConsumption_Zone1)
+        ) /
+        (
+            STDDEV_POP(WindSpeed) *
+            STDDEV_POP(PowerConsumption_Zone1)
+        ), 4
+    ) AS Zone1_Wind_Correlation,
+
+    ROUND(
+        (
+            AVG(WindSpeed * PowerConsumption_Zone2)
+            - AVG(WindSpeed) * AVG(PowerConsumption_Zone2)
+        ) /
+        (
+            STDDEV_POP(WindSpeed) *
+            STDDEV_POP(PowerConsumption_Zone2)
+        ), 4
+    ) AS Zone2_Wind_Correlation,
+
+    ROUND(
+        (
+            AVG(WindSpeed * PowerConsumption_Zone3)
+            - AVG(WindSpeed) * AVG(PowerConsumption_Zone3)
+        ) /
+        (
+            STDDEV_POP(WindSpeed) *
+            STDDEV_POP(PowerConsumption_Zone3)
+        ), 4
+    ) AS Zone3_Wind_Correlation
+
+FROM power_consumption_clean;
+
+-- 
+
+
